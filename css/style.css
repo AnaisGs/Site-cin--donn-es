@@ -1,0 +1,249 @@
+
+body {
+  font-family: 'poppins', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  width: 100%;
+  background-color: #cb4e5c; /* Couleur d'arrière-plan, modifiable */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo img {
+  height: 50px; /* Ajustez la hauteur selon vos besoins */
+}
+
+.title {
+  flex: 1; /* Permet au titre de prendre l'espace restant */
+  text-align: center;
+  color: #fff;
+  font-family: 'poppin', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 2rem;
+
+}
+
+.title a {
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff; /* Couleur du texte */
+  font-size: 1.6rem; /* Taille du texte, ajustable */
+  font-weight: bold;
+  margin-left: 30rem;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #e2818c; /* Couleur des liens */
+  font-size: 16px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: flex;
+  align-items: center;
+  color:#ecbdc3 ;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: white;
+}
+
+/**Caroussel*/
+
+.carousel-img {
+  width: 100%; /* La largeur des images s'adapte au conteneur */
+  height: 500px; /* Définissez une hauteur fixe */
+  object-fit: cover; /* Adapte l'image pour remplir le conteneur sans distorsion */
+  background-color: #000; 
+}
+
+.item {
+  height: 500px; /* Correspond à la hauteur des images */
+  display: flex; /* Pour centrer verticalement les images si elles sont plus petites */
+  justify-content: center; /* Centre horizontalement l'image */
+  align-items: center; /* Centre verticalement l'image */
+  overflow: hidden;
+}
+
+
+.carousel-inner {
+  margin-bottom: 50px; /* Ajoute un espace sous le carousel */
+}
+
+
+/** Section **/
+.section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  background-color: #f8d7da; /* Fond rose doux */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Flexbox pour disposition */
+.flex {
+  display: flex;
+  align-items: flex-start; /* Les éléments ne sont pas regroupés */
+  gap: 20px;
+}
+
+.w40, .w60 {
+  flex: 1;
+}
+
+.w40 {
+  max-width: 40%; /* Largeur fixe */
+}
+
+.w60 {
+  max-width: 60%;
+}
+
+/* Titres */
+h2 {
+  font-size: 32px; /* Agrandissement des titres */
+  font-weight: 700;
+  color: #cb4e5c; /* Couleur rouge */
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif; /* Police pour le titre */
+}
+
+/* Texte */
+p {
+  margin-bottom: 20px;
+  font-size: 17px; /* Taille spécifique */
+  line-height: 1.6; /* Meilleure lisibilité */
+  text-align: justify; /* Alignement justifié */
+  font-family: "Poppins", sans-serif; /* Police Poppins */
+}
+
+/* Images */
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease; /* Animation au survol */
+}
+
+.img-responsive:hover {
+  transform: scale(1.05); /* Zoom au survol */
+}
+
+/* Boutons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #cb4e5c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e2818c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column; /* Éléments empilés sur petit écran */
+  }
+
+  .w40, .w60 {
+    max-width: 100%; /* Largeur pleine sur petit écran */
+  }
+}
+
+/* FOOTER */
+.footer {
+  padding: 2rem;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 90%; 
+}
+
+@media (min-width: 768px) {
+  .footer {
+      max-width: 1000px; 
+  }
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logos-footer {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px; 
+}
+
+.logo-footer-site,
+.logo-footer-cyu {
+  max-width: 80px;
+  max-height: 80px;
+  height: auto;
+  width: auto;
+  object-fit: contain; 
+}
+
+.container-footer p {
+  font-size: 1.3rem;
+  color: #333333;
+  margin: 0.5rem 0;
+}
+
+.container-footer a {
+  color: #333333; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation-externe{
+  font-size: 1.5rem;
+}
+
+.lien-reseau-sociaux {
+  color: #333333; 
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 1rem; 
+}
+
+.lien-reseau-sociaux:hover {
+  color: #b74b4b;
+  text-decoration: underline;
+}
